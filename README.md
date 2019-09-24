@@ -134,9 +134,7 @@ generatorConfig.xml(逆向工程文件)
         </context>
     </generatorConfiguration>
 
-做如下操作可得到生成文件
-
-
+![做如下操作可得到生成文件](https://github.com/yfdisme/test/blob/master/src/main/resources/static/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190924112757.png)
 
 新建DTO
 
