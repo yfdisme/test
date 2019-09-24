@@ -9,24 +9,24 @@ import java.util.stream.Stream;
 
 public class StreamTest {
     public static void main(String[] args) {
-        List<User> list = new ArrayList<User>();
-        list.add(new User("limang",21,173));
-        list.add(new User("yfd",20,171));
-        list.add(new User("ych",20,176));
-        list.add(new User("yhh",42,173));
-        list.add(new User("shizong",30,172));
-        ListIterator<User> iterator = list.listIterator();
-
-//        List<Integer> collect = list.stream().filter(a -> a.getAge() > 10).mapToInt(User::getAge).boxed().collect(Collectors.toList());
-//        System.out.println(collect);
-        while (iterator.hasNext()){
-            if ("yfd".equals(iterator.next().getName())){
-                iterator.remove();
-            }
-
-           // System.out.println(iterator.next()+""+iterator.previousIndex()+""+iterator.nextIndex());
-        }
-        System.out.println(list);
+//        List<User> list = new ArrayList<User>();
+//        list.add(new User("limang",21,173));
+//        list.add(new User("yfd",20,171));
+//        list.add(new User("ych",20,176));
+//        list.add(new User("yhh",42,173));
+//        list.add(new User("shizong",30,172));
+//        ListIterator<User> iterator = list.listIterator();
+//
+////        List<Integer> collect = list.stream().filter(a -> a.getAge() > 10).mapToInt(User::getAge).boxed().collect(Collectors.toList());
+////        System.out.println(collect);
+//        while (iterator.hasNext()){
+//            if ("yfd".equals(iterator.next().getName())){
+//                iterator.remove();
+//            }
+//
+//           // System.out.println(iterator.next()+""+iterator.previousIndex()+""+iterator.nextIndex());
+//        }
+//        System.out.println(list);
         //System.out.println(iterator.next()+""+iterator.previousIndex()+""+iterator.nextIndex());
  //       HashMap<String, User> map = new HashMap<>();
         //返回List集合排序

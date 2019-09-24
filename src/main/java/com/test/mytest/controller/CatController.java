@@ -19,4 +19,16 @@ public class CatController {
         int state = catService.insertCar(catPo);
         return AcctResult.resultSuccessful(state);
     }
+
+    @RequestMapping(value = "searchCat" ,method = RequestMethod.POST)
+    public AcctResult<Cat> searchCat(@RequestBody Cat cat){
+        Cat cat1 = catService.searchCat(cat);
+        return AcctResult.resultSuccessful(cat);
+    }
+
+    @RequestMapping(value = "deleteCat",method = RequestMethod.POST)
+    public AcctResult<Integer> deleteCat(@RequestBody Cat cat){
+        int state = catService.deleteCat(cat);
+        return AcctResult.resultSuccessful(state);
+    }
 }

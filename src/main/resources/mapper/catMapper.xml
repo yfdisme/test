@@ -10,4 +10,12 @@
         values
         (#{catID},#{name})
     </insert>
+
+    <select id="searchCat" parameterType="com.test.mytest.bean.Cat" resultType="com.test.mytest.bean.Cat">
+        select * from an_cat where catID  = #{catID}
+    </select>
+
+    <delete id="deleteCat" parameterType="com.test.mytest.bean.Cat" >
+        delete * from an_cat where catID = #{catID}
+    </delete>
 </mapper>

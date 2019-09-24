@@ -1,46 +1,127 @@
 package com.test.mytest.bean;
 
-public class User {
-    private String name;
-    private int age;
-    private double highe;
+import java.io.Serializable;
+import java.util.Date;
+import javax.persistence.*;
 
-    public User(String name, int age, double highe) {
-        this.name = name;
-        this.age = age;
-        this.highe = highe;
+@Table(name = "user")
+public class User implements Serializable {
+    private static final long serialVersionUID = -8246239373253061143L;
+    /**
+     * ID
+     */
+    @Id
+    @GeneratedValue(generator = "JDBC")
+    private Integer id;
+
+    /**
+     * 帐号
+     */
+    private String account;
+
+    /**
+     * 密码
+     */
+    private String password;
+
+    /**
+     * 昵称
+     */
+    private String username;
+
+    /**
+     * 注册时间
+     */
+    @Column(name = "reg_time")
+    private Date regTime;
+
+    /**
+     * 获取ID
+     *
+     * @return id - ID
+     */
+    public Integer getId() {
+        return id;
     }
 
-    public String getName() {
-        return name;
+    /**
+     * 设置ID
+     *
+     * @param id ID
+     */
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    /**
+     * 获取帐号
+     *
+     * @return account - 帐号
+     */
+    public String getAccount() {
+        return account;
     }
 
-    public int getAge() {
-        return age;
+    /**
+     * 设置帐号
+     *
+     * @param account 帐号
+     */
+    public void setAccount(String account) {
+        this.account = account;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    /**
+     * 获取密码
+     *
+     * @return password - 密码
+     */
+    public String getPassword() {
+        return password;
     }
 
-    public double getHighe() {
-        return highe;
+    /**
+     * 设置密码
+     *
+     * @param password 密码
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public void setHighe(double highe) {
-        this.highe = highe;
+    /**
+     * 获取昵称
+     *
+     * @return username - 昵称
+     */
+    public String getUsername() {
+        return username;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", highe=" + highe +
-                '}';
+    /**
+     * 设置昵称
+     *
+     * @param username 昵称
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**
+     * 获取注册时间
+     *
+     * @return reg_time - 注册时间
+     */
+    public Date getRegTime() {
+        return regTime;
+    }
+
+    /**
+     * 设置注册时间
+     *
+     * @param regTime 注册时间
+     */
+    public void setRegTime(Date regTime) {
+        this.regTime = regTime;
     }
 }
