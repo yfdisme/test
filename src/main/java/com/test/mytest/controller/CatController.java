@@ -14,6 +14,12 @@ public class CatController {
     @Autowired
     private CatService catService;
 
+    @GetMapping(value = "say")
+    public String sayasPect(){
+        System.out.println("呵呵呵");
+        return "hehhe";
+    }
+
     @RequestMapping(value = "insertCat" ,method = RequestMethod.POST)
     public AcctResult<Integer> insertCat(@RequestBody Cat catPo){
         int state = catService.insertCar(catPo);
