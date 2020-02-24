@@ -22,7 +22,7 @@ public class SpringAspect {
     @Before("pointCut()")
     public void before(JoinPoint joinPoint) throws Throwable {
         // 接收到请求，记录请求内容
-        log.info("【注解：Before】---------yfdxinjiamerger-------slh--切面  before");
+        log.info("【注解：Before】----aaa-----yfdxinjiamerger-------slh--切面  before");
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         // 记录下请求内容
