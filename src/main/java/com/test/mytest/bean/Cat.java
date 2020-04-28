@@ -11,4 +11,5 @@ public class Cat {
     private String address;
     private String catType;
     private Date catBrithday;
+    private String aaa;
 }
