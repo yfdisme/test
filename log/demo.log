@@ -1,0 +1,4 @@
+2020-01-06 22:26:11,025 INFO (StartupInfoLogger.java:50)- Starting MytestApplicationTests on DESKTOP-KV1BOP1 with PID 22264 (started by DELL in H:\workspaces\testDemo\test)
+2020-01-06 22:26:11,032 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2020-01-06 22:26:11,033 INFO (SpringApplication.java:647)- No active profile set, falling back to default profiles: default
+2020-01-06 22:26:31,928 INFO (StartupInfoLogger.java:59)- Started MytestApplicationTests in 22.064 seconds (JVM running for 23.92)
