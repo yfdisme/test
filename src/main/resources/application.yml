@@ -4,6 +4,10 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  elasticsearch:
+    jest:
+      uris: http://localhost:9200
+      read-timeout: 10000
 server:
   port: 8888
 mybatis:
@@ -11,3 +15,11 @@ mybatis:
   type-aliases-package: com.test.mytest.dao
 mapper:
     not-empty: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.20.20.220:9000/eureka/
+    register-with-eureka: false
+  instance:
+    ip-address: true
